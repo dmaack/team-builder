@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css';
+import './App.scss';
 import MemberForm from './components/MemberForm';
 import Member from './components/Member';
 
@@ -23,9 +23,15 @@ function App() {
   }
   return (
     <div className="App">
-      <h1>Team Builder</h1>
-      <MemberForm addNewMember={addNewMember}/>
-      <Member members={members}/>
+      <header>
+        <h1>Team Builder</h1>
+      </header>  
+     
+     <div className='main-content'> 
+      <Member className='member-card' members={members}/>
+      
+     </div>
+     <MemberForm className='add-member' addNewMember={addNewMember}/>
     </div>
   );
 }

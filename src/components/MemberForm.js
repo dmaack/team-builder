@@ -15,11 +15,11 @@ const MemberForm = props => {
     }
     return(
         <form onSubmit={submitForm}>
-            <label htmlFor='member-name'>Name:</label>
+            <label htmlFor='member-name'><strong>Name: </strong></label>
             <input id='member-name' type='text' name='name' onChange={handleChanges} value={member.name}></input>
-            <label htmlFor='member-email'>Email:</label>
+            <label htmlFor='member-email'><strong>Email: </strong></label>
             <input id='member-email' type='text' name='email' onChange={handleChanges} value={member.email}></input>
-            <label htmlFor='member-role'>Role:</label>
+            <label htmlFor='member-role'><strong>Role: </strong></label>
             <input id='member-role' type='text' name='role' onChange={handleChanges} value={member.role}></input>
             <button type='submit'>Add Member</button>
         </form>

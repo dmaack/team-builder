@@ -3,13 +3,13 @@ import React from 'react';
 const Member = props => {
 
     return(
-        <div>
+        <div className='member-cards'>
            {props.members.map(member => (
               
                    <div className='member' key={member.id}>
                        <h2>{member.name}</h2>
-                       <p>{member.email}</p>
-                       <p>{member.role}</p>
+                       <p><strong>Email: </strong>{member.email}</p>
+                       <p><strong>Role: </strong>{member.role}</p>
                    </div>
                
            ))} 

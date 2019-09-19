@@ -1,0 +1,99 @@
+// .App {
+//   text-align: center;
+// }
+
+// .App-logo {
+//   animation: App-logo-spin infinite 20s linear;
+//   height: 40vmin;
+//   pointer-events: none;
+// }
+
+// .App-header {
+//   background-color: #282c34;
+//   min-height: 100vh;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   font-size: calc(10px + 2vmin);
+//   color: white;
+// }
+
+// .App-link {
+//   color: #61dafb;
+// }
+
+// @keyframes App-logo-spin {
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }
+
+.App{
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  background-image: url("./img/teamImage.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  animation-name: fade-in;
+  animation-duration: 3s;
+  margin: auto;
+}
+
+h1{
+  width: 100%;
+  height:10vh;
+  background-color: #a6c9d2;
+  text-align: center;
+  padding-top: 5%;
+  color: white;
+}
+
+.main-content{
+  max-height: 900px;
+  display: flex;
+  align-items: center;
+  .member-cards{
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    
+    .member{
+      background-color: #e0ddd9;
+      width: 300px;
+      text-align: center;
+      padding: 2% 3%;
+      margin: 2%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+ 
+}
+
+form{
+  background-color: #a6c9d2;
+  width: 100%;
+  height: 5vh;
+  padding-top:5%;
+  text-align: center;
+  input{
+    margin: 0 1%;
+  }
+  
+  button{
+    color: grey;
+    padding: .5% 4%;
+    text-align: center;
+    font-size: 1rem;
+    margin-left: 2%;
+  }
+}
