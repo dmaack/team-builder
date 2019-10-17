@@ -29,7 +29,6 @@ function App() {
      
      <div className='main-content'> 
       <Member className='member-card' members={members}/>
-      
      </div>
      <MemberForm className='add-member' addNewMember={addNewMember}/>
     </div>
